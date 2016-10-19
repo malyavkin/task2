@@ -1,6 +1,7 @@
 import unittest
-from math_utils import *
-from ping_utils import *
+
+from task2.rest.utils.math_utils import *
+from task2.rest.utils.ping_utils import *
 
 
 class MyTestCase(unittest.TestCase):
