@@ -1,6 +1,6 @@
 import platform
-import os
 import subprocess
+
 
 def ping(hostname, times):
     """
