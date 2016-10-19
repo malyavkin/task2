@@ -1,5 +1,6 @@
 import unittest
 from math_utils import *
+from ping_utils import *
 
 
 class MyTestCase(unittest.TestCase):
@@ -19,6 +20,10 @@ class MyTestCase(unittest.TestCase):
     def test_factorize(self):
         factors = factorize(4759123141)
         self.assertSetEqual({48781, 97561}, set(factors))
+
+    def test_ping(self):
+        r = ping('google.com', 10)
+        self.assertEqual(0, r)
 
 if __name__ == '__main__':
     unittest.main()
