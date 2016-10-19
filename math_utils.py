@@ -9,6 +9,7 @@ def is_prime(n):
         j += 1
     return True
 
+
 def find_nth_prime(n):
     prime_count = 0
     num = 1
@@ -16,6 +17,15 @@ def find_nth_prime(n):
         num += 1
         if is_prime(num):
             prime_count += 1
-            if prime_count % 5000 == 0:
-                print(prime_count)
     return num
+
+
+def factorize(n):
+    factors = []
+    while n > 1:
+        for i in range(2, n + 1):
+            if n % i == 0:
+                n //= i
+                factors.append(i)
+                break
+    return factors
