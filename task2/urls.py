@@ -19,7 +19,7 @@ from task2.rest import views
 from django.contrib import admin
 
 router = routers.DefaultRouter()
-`router.register(r'tasks', views.TaskViewSet, base_name="tasks")
+router.register(r'tasks', views.TaskViewSet, base_name="tasks")
 
 
 urlpatterns = [
