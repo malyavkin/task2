@@ -23,8 +23,8 @@ class MyTestCase(unittest.TestCase):
         self.assertSetEqual({48781, 97561}, set(factors))
 
     def test_ping(self):
-        r = ping('google.com', 10)
-        self.assertEqual(0, r)
+        r = ping('google.com', 5)
+        self.assertTrue('173.194.222.100' in str(r))
 
 if __name__ == '__main__':
     unittest.main()
