@@ -7,3 +7,4 @@ class TaskResult(models.Model):
     args = models.TextField(max_length=4096)
     task_result = models.TextField(max_length=4096)
     user = models.ForeignKey(settings.AUTH_USER_MODEL)
+    status = models.CharField(max_length=10)
